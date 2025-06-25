@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGBTQIA+ - Gêneros, Sexualidades e Identidades</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom,
+                #FFC5C5, /* rosa pastel */
+                #C9E4CA, /* verde pastel */
+                #87CEEB, /* azul pastel */
+                #F7D2C4 /* laranja pastel */
+            );
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            min-height: 100vh; /* Use min-height for content to expand */
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6; /* Improved readability */
+            padding: 20px; /* Add some padding to the body */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        .container {
+            max-width: 960px; /* Standard content width for readability */
+            margin: 0 auto; /* Center the container */
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for content */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #FFB6C1; /* Accent line */
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #444;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 5px solid #87CEEB; /* Accent line */
+            padding-left: 10px;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #555;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .section-button {
+            display: block; /* Make buttons block level */
+            width: 100%;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #FFB6C1; /* Default button color */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: left;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-button:hover {
+            background-color: #ff99ae; /* Darker pink on hover */
+            transform: translateY(-2px);
+        }
+
+        .section-button.azul {
+            background-color: #87CEEB; /* Blue button */
+        }
+
+        .section-button.azul:hover {
+            background-color: #6fbbe8;
+        }
+
+        .section-button.verde {
+            background-color: #C9E4CA; /* Green button */
+            color: #333; /* Darker text for contrast */
+        }
+
+        .section-button.verde:hover {
+            background-color: #b3d2b7;
+        }
+
+        .section-button.laranja {
+            background-color: #F7D2C4; /* Orange button */
+            color: #333; /* Darker text for contrast */
+        }
+
+        .section-button.laranja:hover {
+            background-color: #e0bdae;
+        }
+
+        .explanation-content {
+            display: none; /* Hidden by default */
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .explanation-content p {
+            margin-bottom: 1em;
+        }
+
+        .explanation-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ABNT-like formatting for citations (example) */
+        .citation {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 20px; /* Increased margin for better separation */
+            text-align: right;
+            border-top: 1px dashed #ccc; /* Subtle line above citation */
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>Gêneros, Sexualidades e Identidades</h1>
+    <hr>
+
+    <button class="section-button verde" onclick="toggleExplanation('contextExplanation')">1. Compreensão da Diversidade Humana</button>
+    <div id="contextExplanation" class="explanation-content">
+        <h2>1.1 Desmistificação de Conceitos Essenciais</h2>
+        <p>Este recurso dedica-se à exploração da complexidade das identidades humanas. O objetivo é oferecer clareza sobre termos como <mark>sexualidade</mark>, <mark>gênero</mark> e <mark>identidade</mark>, que, embora frequentemente empregados, nem sempre são compreendidos em sua totalidade. Ao aprofundar esses conceitos, busca-se promover um maior entendimento e, consequentemente, um respeito mais profundo pelas diversas formas de ser e existir no mundo.</p>
+        <p>A presente discussão não visa estabelecer preceitos de "certo" ou "errado", mas sim elucidar a vasta gama da experiência humana. A capacidade de reconhecer e valorizar a própria identidade, bem como a de outrem, é considerada um direito fundamental. Assim, este material constitui um instrumento para a reflexão e o aprendizado contínuo sobre a diversidade inerente à sociedade.</p>
+        <p class="citation">Referência: FOUCAULT, Michel. História da Sexualidade I: A Vontade de Saber. Rio de Janeiro: Graal, 1988. (Adapte para a referência real utilizada na sua pesquisa)</p>
+    </div>
+
+    <button class="section-button azul" onclick="toggleExplanation('sexGenderExplanation')">2. Sexo Biológico e Identidade de Gênero</button>
+    <div id="sexGenderExplanation" class="explanation-content">
+        <h2>2.1 Distinguindo o Atribuído do Vivido</h2>
+        <p>É crucial diferenciar o <mark>sexo biológico</mark> da <mark>identidade de gênero</mark>. O sexo biológico refere-se às características físicas, genéticas e hormonais presentes ao nascimento, que tradicionalmente classificam os indivíduos como "masculino", "feminino" ou, no caso de pessoas intersexo, com variações que desafiam essas categorias binárias. Essa categorização inicial é baseada em observações físicas e não reflete a totalidade da experiência humana.</p>
+        <p>A <mark>identidade de gênero</mark>, por outro lado, é o senso interno e individual de ser homem, mulher, ambos, nenhum ou outra identidade de gênero. É uma experiência subjetiva e intrínseca que pode ou não corresponder ao sexo atribuído ao nascer. O gênero é uma construção social e cultural que influencia como a sociedade percebe e interage com os indivíduos, mas a identidade de gênero de uma pessoa é pessoal e inalienável.</p>
+        <h2>2.2 A Construção Social do Gênero e a Autonomia da Identidade</h2>
+        <p>A sociedade historicamente impôs normas e expectativas sobre o que significa ser "homem" ou "mulher". No entanto, essas construções são fluidas e variam culturalmente e ao longo do tempo. A teoria de Judith Butler, por exemplo, destaca o gênero como uma performance, algo que é constantemente vivido e expresso através de atos, linguagens e comportamentos, questionando a ideia de um gênero essencial ou predeterminado.</p>
+        <p>A compreensão de que a identidade de gênero transcende o sexo biológico é fundamental para reconhecer a validade de identidades como <mark>transgênero</mark> (identidade de gênero diferente do sexo atribuído ao nascer), <mark>não-binária</mark> (não se identifica exclusiva ou totalmente como homem ou mulher) e <mark>agênero</mark> (não se identifica com nenhum gênero). Respeitar essas identidades é reconhecer a autonomia de cada indivíduo sobre seu próprio ser.</p>
+        <p class="citation">Referência: BUTLER, Judith. Problemas de Gênero: Feminismo e Subversão da Identidade. Rio de Janeiro: Civilização Brasileira, 2003. (Adapte para a referência real utilizada na sua pesquisa)</p>
+    </div>
+
+    <button class="section-button laranja" onclick="toggleExplanation('sexualitiesExplanation')">3. Orientação Sexual</button>
+    <div id="sexualitiesExplanation" class="explanation-content">
+        <h2>3.1 Explorando as Dimensões do Amor e da Atração</h2>
+        <p>A <mark>orientação sexual</mark> refere-se à direção da atração afetiva, romântica e/ou sexual de uma pessoa por outras. É uma parte intrínseca da identidade de um indivíduo e se manifesta de diversas formas, rompendo com a visão limitada que historicamente predominou na sociedade. A diversidade de orientações sexuais reflete a complexidade e a riqueza das relações humanas.</p>
+        <p>Algumas das orientações sexuais amplamente reconhecidas incluem:</p>
+        <ul>
+            <li><strong>Heterossexualidade:</strong> Atração por pessoas de um gênero diferente do seu.</li>
+            <li><strong>Homossexualidade (Gays e Lésbicas):</strong> Atração por pessoas do mesmo gênero que o seu. Mulheres que se atraem por mulheres são lésbicas; homens que se atraem por homens são gays.</li>
+            <li><strong>Bissexualidade:</strong> Atração por mais de um gênero, não necessariamente ao mesmo tempo, da mesma forma ou no mesmo grau.</li>
+            <li><strong>Pansexualidade:</strong> Atração por pessoas independentemente do seu gênero. A atração se foca na pessoa e não em sua identidade de gênero.</li>
+            <li><strong>Assexualidade:</strong> Ausência total ou parcial de atração sexual. Isso não significa ausência de atração romântica ou afetiva.</li>
+            <li><strong>Demissexualidade:</strong> Sente atração sexual somente após desenvolver uma forte conexão emocional com a pessoa.</li>
+            <li><strong>Polissexualidade:</strong> Atração por múltiplos gêneros, mas não necessariamente todos os gêneros.</li>
+        </ul>
+        <p>A pluralidade das orientações sexuais sublinha que o amor e o desejo são experiências multifacetadas, que não devem ser restritas ou julgadas. Cada orientação é legítima e merece reconhecimento e respeito.</p>
+        <h2>3.2 O Desafio da Homofobia e a Luta por Direitos</h2>
+        <p>Apesar da crescente visibilidade e aceitação, pessoas de diversas orientações sexuais ainda enfrentam preconceito, discriminação e violência. A <mark>homofobia</mark>, <mark>bifobia</mark> e </mark>lesbofobia</mark> são manifestações desse preconceito que buscam marginalizar e desumanizar indivíduos com base em sua orientação sexual.</p>
+        <p>A luta por direitos e reconhecimento é contínua e visa garantir que todas as pessoas possam amar e viver suas vidas com dignidade, segurança e liberdade. A promoção da educação e o combate à desinformação são ferramentas essenciais nessa jornada por uma sociedade mais justa e inclusiva.</p>
+        <p class="citation">Referência: BRASIL. Ministério da Saúde. Política Nacional de Saúde Integral de Lésbicas, Gays, Bissexuais, Travestis e Transexuais. Brasília, DF: Ministério da Saúde, 2011. (Adapte para a referência real utilizada na sua pesquisa)</p>
+    </div>
+
+    <button class="section-button" onclick="toggleExplanation('lgbtqiaExplanation')">4. O Movimento LGBTQIA+</button>
+    <div id="lgbtqiaExplanation" class="explanation-content">
+        <h2>4.1 A Sigla LGBTQIA+: Um Mosaico de Identidades</h2>
+        <p>A sigla <mark>LGBTQIA+</mark> é um acrônimo que busca representar a vasta diversidade de orientações sexuais e identidades de gênero. Ela é dinâmica e se expande para incluir mais pessoas e suas experiências, refletindo a evolução da compreensão e do reconhecimento dessas identidades na sociedade. Cada letra representa um grupo significativo:</p>
+        <ul>
+            <li><strong>L: Lésbicas</strong> – Mulheres que sentem atração romântica, afetiva e/ou sexual por outras mulheres.</li>
+            <li><strong>G: Gays</strong> – Homens que sentem atração romântica, afetiva e/ou sexual por outros homens.</li>
+            <li><strong>B: Bissexuais</strong> – Pessoas que sentem atração romântica, afetiva e/ou sexual por mais de um gênero.</li>
+            <li><strong>T: Transgêneros, Transexuais e Travestis</strong> – Pessoas cuja identidade de gênero difere do sexo que lhes foi atribuído ao nascer.</li>
+            <li><strong>Q: Queer</strong> – Um termo "guarda-chuva" para pessoas que não se encaixam nas categorias de gênero e sexualidade normativas. Também pode ser usado por quem está questionando sua identidade.</li>
+            <li><strong>I: Intersexo</strong> – Pessoas nascidas com características sexuais (como genitais, gônadas ou padrões cromossômicas) que não se encaixam nas definições típicas de corpos masculinos ou femininos.</li>
+            <li><strong>A: Assexuais</strong> – Pessoas que não sentem atração sexual por ninguém. (Outras interpretações podem incluir Aliados, mas a definição primária de "A" no contexto da sigla LGBTQIA+ é Assexual).</li>
+            <li><strong>+: O Sinal de Mais</strong> – Representa outras identidades de gênero e orientações sexuais que não são especificamente listadas na sigla, e também aliados heterossexuais e cisgêneros que apoiam a causa.</li>
+        </ul>
+        <p>A inclusão contínua de letras e o uso do "+" reforçam o compromisso do movimento em ser abrangente e acolhedor.</p>
+
+        <h2>4.2 Marcos Históricos e a Jornada pela Dignidade</h2>
+        <p>A história do movimento LGBTQIA+ é marcada por décadas de luta e resistência contra a opressão. Um marco fundamental foi o <mark>Motim de Stonewall</mark>, ocorrido em 28 de junho de 1969, em Nova York. A revolta contra a violência policial e a discriminação sistêmica nesse bar gay impulsionou o movimento por direitos civis e é celebrada anualmente como o Dia do Orgulho LGBTQIA+.</p>
+        <p>Desde Stonewall, o movimento tem alcançado significativas conquistas legais e sociais em muitos países, como o reconhecimento de uniões homoafetivas, a criminalização da LGBTfobia e a garantia de direitos para pessoas trans. No entanto, o preconceito e a violência ainda são realidades enfrentadas pela comunidade LGBTQIA+, especialmente em regiões onde a legislação e a mentalidade social ainda são conservadoras.</p>
+        <p>A história do movimento é um testemunho da resiliência, da coragem e da capacidade de mobilização de uma comunidade que, apesar dos desafios, segue lutando por um mundo onde todas as pessoas possam viver com dignidade, orgulho e sem medo de serem quem são.</p>
+        <p class="citation">Sugestão de Referência: BLUMER, Herbert. Symbolic Interactionism: Perspective and Method. Englewood Cliffs: Prentice-Hall, 1969. (Adapte para a referência real utilizada na sua pesquisa ou sobre Stonewall)</p>
+    </div>
+</div>
+
+
+    <script>
+        function toggleExplanation(id) {
+            const explanation = document.getElementById(id);
+            if (explanation.style.display === 'block') {
+                explanation.style.display = 'none';
+            } else {
+                // Optional: Close all other explanations before opening a new one
+                const allExplanations = document.querySelectorAll('.explanation-content');
+                allExplanations.forEach(exp => {
+                    if (exp.id !== id) {
+                        exp.style.display = 'none';
+                    }
+                    });
+                explanation.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
